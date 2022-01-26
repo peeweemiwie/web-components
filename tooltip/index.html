@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tooltip</title>
+  <script src="./tooltip.js"></script>
+  <script src="./confirm-link.js"></script>
+  <style>
+    :root {
+      --color-primary: lightblue;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: 'roboto', sans-serif;
+    }
+
+    p {
+      margin-top: 5em;
+    }
+  </style>
+</head>
+
+<body>
+  <p>
+    <wc-tooltip message='I love tooltip!' class='important'>
+      <slot>Web Components</slot>
+    </wc-tooltip> is awesome!!!!
+  </p>
+  <div>
+    <wc-tooltip></wc-tooltip>
+  </div>
+  <!-- <a is='wc-confirm-link' href="http://google.com">Google</a> -->
+</body>
+
+</html>
